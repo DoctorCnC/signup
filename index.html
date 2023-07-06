@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      .container {
+        display: flex;
+        height: 800px;
+
+      }
+      .left-half {
+        flex: 1;
+      }
+      .right-half {
+        flex:1;
+       
+        
+        
+
+      }
+      .left-half .my-image {
+        max-width: 100%;
+        height: auto;
+      }
+      .container .logo {
+        position:absolute;
+        bottom: 30%;
+        left: 155px;
+        top: 10%;
+        padding: .5rem;
+        margin: 4px;
+        width: 10%; 
+        
+
+      }
+
+      .container .back-div {
+        position:absolute;
+        top: 10%;
+        width: 21%;
+        bottom: 80%;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 118px;
+        margin: 10px;
+
+        
+
+      }
+
+      .container .text{
+        font-family: 'Norse', sans-serif;
+        color:rgb(255, 255, 255);
+        font-size:3em;
+        position:absolute;
+        bottom: 30%;
+        left: 20%;
+        top: 20%;
+        padding: .5rem;
+        margin: 4px;
+        width: 10%; 
+      }
+
+      .container .column{
+        flex:1;
+        height : 40%;
+        font-size:3em;
+        background-color: aquamarine;
+        font-family: 'Norse', sans-serif;
+        flex-wrap: wrap;
+
+
+
+
+      }
+      
+
+      .container .create-account-button {
+      background-color: #596D48;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .container .login-link {
+      color: #596D48;
+      text-decoration: none;
+    }
+
+
+      .container .column-form{
+        flex:1;
+        height : 30%;
+      }
+
+      .container .column3{
+        flex:1;
+        height : 0%;
+
+      }
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-half">
+            <img src="c1.jpg" alt="Image description" class="my-image">
+            <img src="logo.png" alt="Logo" class="logo">
+            <p class="text"> ODIN</p>
+            <div class= "back-div">
+        </div>
+            
+      </div>
+            
+        <div class="right-half">
+            <div class="column">
+                <h2></h2>
+                <p>
+                  This is not a real online service! You know you need something <br>like this in your life to help you realize your deepest dreams.<br>
+                  Sign up <em> now</em> to get started
+                  
+                  You <em>know</em> you want to..</p>
+              </div>
+            <div class="column-form">
+                <h2>Column 2 (Form)</h2>
+                <form>
+                  <input type="text" placeholder="Name">
+                  <input type="email" placeholder="Email">
+                  <input type="password" placeholder="Password">
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            <div class="column3">
+              <button class="create-account-button">Create Account</button>
+              <p>
+                Already have an account? 
+                <a href="#" class="login-link">Login</a>
+              </p>
+          
+          
+
+            </div>
+          </div>
+
+
+        </div>
+</body>
+</html>
